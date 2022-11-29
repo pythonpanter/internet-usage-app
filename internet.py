@@ -43,8 +43,8 @@ st.subheader("Global map with development per year:")
 if st.checkbox("Show map"):
 
     year_sel = st.slider("Choose year: (2017 has most complete data)",
-                          min_value=df_rec["Year"].min(),
-                          max_value=df_rec["Year"].max(),
+                          min_value=int(df_rec["Year"].min()),
+                          max_value=int(df_rec["Year"].max()),
                           value=2017,
                           #step=None,
                           #format=None,
